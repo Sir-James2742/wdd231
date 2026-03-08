@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en -US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="james Omondi">
+    <meta name="description" content="This is the index website in week one">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"  href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+</head>
+<body>
+    <header >
+        <img src="images/microsoft-teams.svg" alt="logo" width="22" height="22">
+        <span>Mr Jarvis Cinco</span>
+        <button id="com" class="complical"  arial-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#" >Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit.
+                
+            </p>
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/photo.enc" alt="personal photo" loading="lazy">
+        </section>
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="category">
+                <div class="button-group">
+                    <button id="all">All Courses</button>
+                    <button id="wdd">WDD Courses</button>
+                    <button id="cse">CSE Courses</button>
+                </div>
+                <div class="course-display">
+                    <p><span id="course-no"></span></p>
+                
+                    <div id="courses"></div>
+                    <p><span id="credits"></span></p>
+                </div>
+                
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/Sir-James2742/wdd231" target="_blank"><img src="images/github.svg" height="22" width="22"></a>
+            <a href="https://www.linkedin.com/in/james-omondi-b283202a5/" target="_blank"><img src="images/linkedin.svg" height="22" width="22"></a>
+        </div>
+        <p>©<span id="current-year"></span> James Omondi. Nairobi, Kenya</p>
+        <span id="lastModified"></span>
+    </footer> 
+</body>
+</html>

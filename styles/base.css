@@ -1,0 +1,137 @@
+*{
+    font-family:Roboto Helvetica;
+    box-sizing:border-box;
+}
+header{
+    display:grid;
+    grid-template-columns:24px auto 44px;
+    padding: 10px;
+    grid-gap:10px;
+    align-items:end;
+    border-bottom:solid rgb(244, 238, 238);
+    color:#1E3A8A;
+}
+header span {
+    font-size:1.5rem;
+}
+header img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+.complical{
+    background:none;
+    border: none;
+    cursor:pointer;
+    font-family:verdana,Geneva, Tahoma sans-serif;
+    font-size:1.5rem;
+}
+.complical::before{
+    content:"\2630";
+}
+.complical.show::before{
+    content:"\00D7";
+}
+.navigation {
+    display:none;
+}
+.navigation.show {
+    display:block;
+}
+.navigation ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.navigation a{
+    display:block;
+    padding: 0.7rem 10px;
+    text-decoration:none;
+    border-bottom:solid #f1d7d7;
+    color:#1E3A8A;
+}
+.navigation li.current{
+    background-color: #eee;
+}
+.navigation a:hover{
+    background-color:#b0a9a9;
+}
+
+
+footer{
+    background-color:#d7d3d3;
+    padding: 1rem 10px;
+    text-align:center;
+}
+.social{
+     display:flex;
+     justify-content:center;
+     column-gap:10px;
+}
+.social a{
+    display:flex;
+    height:44px;
+    width:44px;
+    justify-content: center;
+    align-items:center;
+    border: solid #5e5c5c 1px;
+    border-radius: 5px;
+}
+
+.social a:hover{
+    background-color: #b0a9a9;
+}
+section img{
+    width:100%;
+    height:auto;
+    align-content:center;
+}
+main{
+    display:flex;
+    flex-flow:column;
+    flex-wrap:wrap;
+    align-items:center;
+    padding: 10px;
+    justify-content:center;
+}
+h2{
+    text-align:center;
+    Background-color:black;
+    color:white;
+}
+h1 {
+    padding-right: 1rem 10px;
+    align-content:start;
+
+}
+.category{
+    display:block;
+}
+.category {
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+}
+.button-group {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.button-group button {
+    padding: 8px 14px;
+    cursor: pointer;
+}
+#courses {
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    flex-wrap:wrap;
+    gap: 10px;
+}
+#courses div {
+    padding: 8px 14px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}

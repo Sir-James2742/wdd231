@@ -1,0 +1,58 @@
+@media only screen and (min-width: 38rem){
+    .complical{
+        display:none;
+    }
+    header ,nav , main, footer{
+        max-width:900px;
+        margin:0 auto;
+    } 
+    header{
+        display:grid;
+        grid-template-columns:24px auto;
+    }
+    .navigation {
+        display:block !important;
+        border-bottom:solid #f1d7d7;
+    }
+    .navigation ul{
+        display:flex;
+        
+    }
+    .navigation a{
+        border-bottom:none;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "about photo"
+            "certificate certificate";
+        gap: 20px;
+    }
+
+    main h1 {
+        grid-area: title;
+    }
+
+    .about {
+        grid-area: about;
+    }
+
+    .photo {
+        grid-area: photo;
+    }
+
+    .certificate {
+        grid-area: certificate;
+    }
+    main section {
+        align-self: start;
+    }
+
+    
+    .photo img {
+        width: 100%;
+        height: auto;
+    }
+}
