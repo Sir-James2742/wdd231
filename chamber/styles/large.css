@@ -1,0 +1,28 @@
+@media only screen and (min-width: 38rem){
+    .hamburger {
+            display: none;
+        }
+ .head{
+    display:flex;
+    justify-content:space-evenly;
+    max-width:1200px;
+    padding-right:2rem;
+ }
+ .navigation{
+    display:block !important;
+ }
+ .navigation ul{
+    display:flex;
+ }
+ #log{
+    display:none;
+ }
+ footer{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin:1rem auto;
+    padding-left:1rem;
+ }
+}

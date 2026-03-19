@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Safaricom PLC",
+        "address": "Safaricom House, Waiyaki Way, Nairobi, Kenya",
+        "phone": "+254 722 000000",
+        "website": "https://www.safaricom.co.ke",
+        "image": "images/safaricom.png",
+        "membership": 3,
+        "industry": "Telecommunications",
+        "description": "Leading telecom company in Kenya offering mobile, data, and M-Pesa services."
+    },
+    {
+        "name": "Equity Bank Kenya",
+        "address": "Equity Centre, Hospital Road, Nairobi, Kenya",
+        "phone": "+254 763 000000",
+        "website": "https://equitygroupholdings.com",
+        "image": "images/equity.jpg",
+        "membership": 3,
+        "industry": "Banking",
+        "description": "One of the largest banks in East Africa focusing on financial inclusion."
+    },
+    {
+        "name": "KCB Bank Kenya",
+        "address": "Kencom House, Moi Avenue, Nairobi, Kenya",
+        "phone": "+254 711 000000",
+        "website": "https://ke.kcbgroup.com",
+        "image": "images/kcb.png",
+        "membership": 2,
+        "industry": "Banking",
+        "description": "A major regional bank offering personal and corporate financial services."
+    },
+    {
+        "name": "East African Breweries Limited",
+        "address": "Ruaraka, Nairobi, Kenya",
+        "phone": "+254 711 018000",
+        "website": "https://www.eabl.com",
+        "image": "images/eabl.jfif",
+        "membership": 2,
+        "industry": "Manufacturing",
+        "description": "Top beverage company producing brands like Tusker and Guinness."
+    },
+    {
+        "name": "Kenya Airways",
+        "address": "Jomo Kenyatta International Airport, Nairobi, Kenya",
+        "phone": "+254 711 024747",
+        "website": "https://www.kenya-airways.com",
+        "image": "images/kenya-airways.jfif",
+        "membership": 1,
+        "industry": "Aviation",
+        "description": "National airline of Kenya operating regional and international flights."
+    },
+    {
+        "name": "Co-operative Bank of Kenya",
+        "address": "Co-op House, Haile Selassie Avenue, Nairobi, Kenya",
+        "phone": "+254 711 049000",
+        "website": "https://www.co-opbank.co.ke",
+        "image": "images/cooperative.jfif",
+        "membership": 2,
+        "industry": "Banking",
+        "description": "Provides banking services with strong focus on cooperatives and SMEs."
+    },
+    {
+        "name": "Nation Media Group",
+        "address": "Kimathi Street, Nation Centre, Nairobi, Kenya",
+        "phone": "+254 711 046000",
+        "website": "https://www.nationmedia.com",
+        "image": "images/nation media.jfif",
+        "membership": 1,
+        "industry": "Media",
+        "description": "Largest independent media house in East Africa."
+    }
+]
