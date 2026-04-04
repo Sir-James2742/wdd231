@@ -59,15 +59,15 @@
             <h2>Membership form</h2>
             <label >
                 First Name
-                <input type="text" name="first" required autocomplete="given name" title="your first name" >
+                <input type="text" name="first" required autocomplete="given-name" title="your first name" >
             </label>
             <label >
                 Last Name
-                <input type="text" name="last" required autocomplete="last name" title="your last name">
+                <input type="text" name="last" required autocomplete="family-name" title="your last name">
             </label>
             <label >
                 Organizational title
-                <input type="text" name="title" autocomplete="Organizational-title" title="your organizational title">
+                <input type="text" name="title" autocomplete="organization-title" title="your organizational title">
             </label>
             <label >
                 Email Address
@@ -79,11 +79,12 @@
             </label>
             <label >
                 Business Name
-                <input type="text" name="businessname" autocomplete="business name" title="business  name" required>
+                <input type="text" name="businessname" autocomplete="organization" title="business  name" required>
             </label>
             <label >
                 Membership Level
                 <select name="membership" required>
+                    <option value="" disabled selected>-- Select Membership Level --</option>
                     <option value="non profit">Non Profit</option>
                     <option value="bronze">Bronze</option>
                     <option value="silver">Silver</option>
