@@ -113,8 +113,10 @@ cseCourses.addEventListener('click', () => {
     displayAll(cse);
 });
 
+const courseDetails = document.querySelector('#course-details');
+
 function displayCourseDetails(course) {
-    courseDetails.innerHTML = '';
+    
     courseDetails.innerHTML = `
     <button id="closeModal">❌</button>
     <h2>${course.subject} ${course.number}</h2>
@@ -130,6 +132,12 @@ function displayCourseDetails(course) {
         courseDetails.close();
     });
 }
-courseDiv.addEventListener('click', () => {
+allCourses.addEventListener('click', () => {
+    displayCourseDetails(course);
+});
+wddCourses.addEventListener('click', () => {
+    displayCourseDetails(course);
+});
+cseCourses.addEventListener('click', () => {
     displayCourseDetails(course);
 });
