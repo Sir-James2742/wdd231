@@ -1,11 +1,11 @@
-@media only screen and (min-width: 38rem){
+@media only screen and (min-width: 1025px){
  .hamburger {
             display: none;
         }
  .head{
     display:flex;
     justify-content:space-evenly;
-    max-width:1200px;
+    width:100%;
     padding-right:2rem;
  }
  .navigation{
@@ -21,7 +21,7 @@
     display:grid;
     grid-template-columns: repeat(3,1fr);
     justify-content: space-evenly;
-    max-width: 1200px;
+    width: 100%;
     margin:1rem auto;
     padding-left:1rem;
  }
@@ -41,4 +41,45 @@
    grid-template-columns: 1fr 1fr;
    gap: 1rem;
 }
+#discover-container{
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0.5rem;
+}
+  #discover-container section {
+     display: grid;
+     grid-template-areas:
+        "name name"
+        "photo address"
+        "photo  description"
+        "photo  site";
+     gap: 0.5rem;
+  }
+
+  #discover-container section h2 {
+     grid-area: name;
+  }
+
+  #discover-container section img {
+     grid-area: photo;
+     width: 300px;
+  }
+
+  #discover-container section p:nth-of-type(1) {
+     grid-area: address;
+  }
+
+  #discover-container section p:nth-of-type(2) {
+     grid-area: description;
+  }
+
+  #discover-container section button {
+     grid-area: site;
+     width: 10rem;
+     margin: 0 auto;
+  }
+  #discover-container section img:hover {
+     box-shadow: 0 0 20px #1a1515;
+  }
+      
 }

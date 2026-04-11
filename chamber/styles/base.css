@@ -94,8 +94,7 @@ footer {
     width: 44px;
     justify-content: center;
     align-items: center;
-    border: solid #5e5c5c 1px;
-    border-radius: 5px;
+
 }
 
 .social a:hover {
@@ -309,4 +308,26 @@ input[type=submit] {
     display:flex;
     flex-direction: column;
     text-align: center;
+}
+
+#discover-container section{
+    border: 1px solid rgb(72, 72, 151);
+    text-align: center;
+    padding: 0 10px 15px 10px;
+    border-radius: 5px;
+    background:#c7c3c3;
+    
+}
+#discover-container{
+    padding: 20px 5px;
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#discover-container img{
+    width:100%;
+}
+#visit-message{
+    text-align: center;
+    
 }
