@@ -33,6 +33,7 @@
         grid-area: site;
         width: 10rem;
         margin : 0 auto;
+        
     }
    #discover-container section img:hover {
     box-shadow: 0 0 20px #eca5a5 ;
