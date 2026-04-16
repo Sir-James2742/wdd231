@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+}
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: verdana, Geneva, Tahoma sans-serif;
+    font-size: 1.5rem;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.7rem 10px;
+    text-decoration: none;
+    border-bottom: solid #f1d7d7;
+    color: #131414;
+    font-size: 1.5rem;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: #b0a9a9;
+}
+header{
+    display: grid;
+    grid-template-columns: 25px 1fr 25px;
+    padding: 2px 15px 5px 5px;
+    background: #d9f0fa;
+}
+.navigation{
+    grid-column: 1/4;
+}
+header span {
+    font-size: 2rem;
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    background: #d9f0fa;
+}
+.social {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    justify-content: center;
+
+}
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius:20px;
+}
+
+footer a:hover{
+    background: rgb(155, 180, 67);
+}
+/*report incident form*/
+.report-form{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    padding-left: 1rem;
+}
+input[type=text],
+input[type=time],
+input[type=date],
+input[type=submit],
+select,
+textarea {
+    display: block;
+    width: 20rem;
+
+}
+
+input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: #3D405B;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    appearance: none;
+}
+label {
+    display: block;
+    color: purple;
+    padding-top: 1rem;
+}
+/*maps*/
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    
+    background: #a8b5f7;
+}
+
+#map {
+    width: 65%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.info {
+    width: 30%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+h1 {
+    text-align: center;
+    padding: 15px;
+    font-size: 2rem;
+    background: #0B1F3B;
+    color :#00D4FF;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+/* Dashboard */
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+}
+
+
+#map {
+    width: 95%;
+    height: 500px;
+    border-radius: 10px;
+    margin:0 auto;
+}
+
+.map-main{
+    padding-top: 15px;
+}
+.side-panel {
+    width: 30%;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+
+/* Incident list */
+#incident-list {
+    list-style: none;
+    padding: 0;
+}
+
+#incident-list li {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background: #eee;
+}
+
+/* alerts*/
+.filters {
+    margin: 15px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#alerts-list {
+    list-style: none;
+    padding: 0;
+    width: 60%;
+    margin: auto;
+}
+
+#alerts-list li {
+    background: rgb(224, 237, 245);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.high {
+    border-left: 5px solid red;
+}
+
+.medium {
+    border-left: 5px solid orange;
+}
+
+.low {
+    border-left: 5px solid green;
+}
+
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Home*/
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 5px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn.secondary {
+    background: red;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #d7f5f5;
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.info-section {
+    text-align: center;
+    padding: 40px;
+    background: #f4f4f4;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 150px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}

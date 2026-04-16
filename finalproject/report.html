@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi City Traffic </title>
+    <meta name="author" content="James Omondi">
+    <meta name="decsription" content="This is a page to help inform people residing in Nairobi to navigate traffic">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/traffic.svg" alt="icon-logo" height="22" width="22">
+        <span>Nairobi City Traffic</span>
+        <button id="ham" class="hamburger"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a  href="final.html">Home</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="alerts.html">Alerts</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="report.html">Report incident</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="report-form">
+            <h2>Report Incident Form</h2>
+            <label>
+                Incident Type
+                <select name="incident" required>
+                    <option value="" disabled selected>--Select incident--</option>
+                    <option value="accident">Accident</option>
+                    <option value="traffic">Traffic Jam</option>
+                    <option value="road">Road Closure</option>
+                    <option value="construction">Construction</option>
+                    <option value="flooding">Flooding</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <label>
+                Location
+                <input type="text" name="location"  autocomplete="street-address" title="incident location" required>
+            </label>
+            <label>
+                Date
+                <input type="date" id="date" name="date">
+            </label>
+            <label>
+                time
+                <input type="time" id="time" name="time">
+            </label>
+            <label>
+                Description
+                <textarea name="description" title="business description" required></textarea>
+            </label>
+            <input type="submit" value="submit report">
+        </form>
+    </main>
+    <footer>
+        <span>Follow us on</span>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="facebook" height="24" width="24"></a>
+            <a href="https://www.instagram.com/"><img src="images/insta.svg" alt="instagram" height="24" width="24"></a>
+            <a href="https://www.x.com/"><img src="images/twitter.svg" alt="twitter" height="24" width="24"></a>
+        </div>
+        <p>©<span id="current-year"></span> Nairobi Chamber of Commerce</p>
+        <span id="lastModified"></span>
+    </footer>
+</body>
+
+</html>

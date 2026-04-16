@@ -1,0 +1,37 @@
+@media only screen and (min-width: 1025px){
+    .hamburger {
+            display: none;
+        }
+    
+        .head {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            padding-right: 2rem;
+        }
+    
+        .navigation {
+            display: block !important;
+            justify-content: space-evenly;
+            
+            
+        }
+    
+        .navigation ul {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        /* maps*/
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 20px;
+        }
+        .main {
+            display: flex;
+            flex-direction: row;
+            padding: 15px;
+            gap: 15px;
+        }
+}
