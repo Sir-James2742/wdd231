@@ -1,0 +1,45 @@
+@media only screen and (min-width: 1025px) {
+    .hamburger {
+        display: none;
+    }
+
+    .head {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-right: 2rem;
+    }
+
+    .navigation {
+        display: block !important;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    #log {
+        display: none;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 1rem auto;
+        padding-left: 1rem;
+    }
+
+    .home-sect {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 0.5fr;
+        gap: 10px;
+    }
+
+    #members {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
