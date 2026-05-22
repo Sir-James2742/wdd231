@@ -18,9 +18,7 @@
         display: flex;
     }
 
-    #log {
-        display: none;
-    }
+
 
     footer {
         display: grid;
@@ -31,15 +29,6 @@
         padding-left: 1rem;
     }
 
-    .home-sect {
-        display: grid;
-        grid-template-columns: 1fr 0.5fr 0.5fr;
-        gap: 10px;
-    }
 
-    #members {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-
-    }
+ 
 }
