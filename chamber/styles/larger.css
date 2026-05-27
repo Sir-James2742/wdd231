@@ -29,6 +29,17 @@
         padding-left: 1rem;
     }
 
-
+  .home-sect {
+      display: grid;
+      grid-template-columns: 1fr 0.5fr 0.5fr;
+      gap: 10px;
+  }
+  .spotlight{
+    flex-direction: row;
+    grid-column: 1/4;
+    gap: 10px;
+    margin: 15px auto;
+    justify-content: space-evenly;
+  }
  
 }

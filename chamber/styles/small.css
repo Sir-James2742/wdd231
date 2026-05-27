@@ -154,3 +154,83 @@ footer {
     gap: 10px;
     margin: 1rem 0;
 }
+
+/*index.html*/
+.weatherforecast {
+    border: solid 1px;
+    border-radius: 5px;
+    padding-left: 5px;
+    background: #dce9f9;
+    margin-bottom: 10px;
+}
+
+.currentweather {
+    border: solid 1px;
+    border-radius: 5px;
+    padding-left: 5px;
+    background: #dce9f9;
+    margin-bottom: 10px;
+}
+
+.events {
+    border: solid 1px;
+    border-radius: 5px;
+    padding-left: 5px;
+    background: #dce9f9;
+    margin-bottom: 10px;
+}
+
+.spotlight{
+    padding: 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.spotlight section{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "h3 h3"
+        "img address"
+        "img phone"
+        "img link"
+        "img membership";
+    gap: 5px;
+    padding: 5px;
+    border: solid 1px;
+    border-radius: 5px;
+    background: #dce9f9;
+    margin: 10px auto;
+    width: 100%;
+}
+.spotlight section h3{
+    grid-area: h3;
+}
+.spotlight section img{
+    grid-area: img;
+    border: solid 1px;
+    }
+.spotlight section p:nth-of-type(1){
+    grid-area: address;
+}
+.spotlight section p:nth-of-type(2){
+    grid-area: phone;
+}
+.spotlight section a{
+    grid-area: link;
+}
+.spotlight section p:nth-of-type(3) {
+    grid-area: membership;
+}
+.spotlight h3 {
+    text-align: center;
+    border-bottom: solid 0.5px;
+}
+.home>img {
+    border: solid 1px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 15px auto;
+}
