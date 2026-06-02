@@ -284,18 +284,15 @@ input[type=submit] {
     width: 15rem;
     gap: 1rem;
     padding-left: 5%;
+    transform: scale(0.8);
+        opacity: 0;
+        animation: zoomIn 0.5s forwards;
 }
 
 .modalbtn button:hover {
     background: rgb(129, 129, 141);
 }
 
-.modalbtn {
-    transform: scale(0.8);
-    opacity: 0;
-    animation: zoomIn 0.5s forwards;
-
-}
 
 .modalbtn:nth-child(1) {
     animation-delay: 0s;
