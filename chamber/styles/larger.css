@@ -41,5 +41,10 @@
     margin: 15px auto;
     justify-content: space-evenly;
   }
- 
+ .join-page main {
+
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 1rem;
+ }
 }

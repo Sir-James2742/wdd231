@@ -82,7 +82,7 @@ const wddCourses = document.getElementById("wdd");
 const cseCourses = document.getElementById("cse");
 
 const courseContainer = document.getElementById("courses");
-let noOfcourses = document.getElementById("course-no");
+let noOfCourses = document.getElementById("course-no");
 let creditScore = document.getElementById("credits");
 
 function displayAll(courseList) {
@@ -100,9 +100,13 @@ function displayAll(courseList) {
         div.textContent = `${course.subject} ${course.number}`;
         courseContainer.appendChild(div);
         totalCredits += course.credits;
+
+        div.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
     }
     );
-    noOfcourses.innerHTML = `The total number of courses listed is ${courseList.length}`;
+    noOfCourses.innerHTML = `The total number of courses listed is ${courseList.length}`;
     creditScore.textContent = `Total number of credit for course listed above is ${totalCredits}`;
 };
 
@@ -118,4 +122,24 @@ cseCourses.addEventListener('click', () => {
     const cse = courses.filter(course => course.subject === "CSE");
     displayAll(cse);
 });
+
+const courseDetails = document.querySelector('#course-details');
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
 
