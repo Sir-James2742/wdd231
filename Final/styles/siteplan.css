@@ -1,0 +1,30 @@
+:root{
+    --background-color: #F8F9FA;
+    --heading-color: #0F2C59;
+    --accent1: #DAC0A3;
+    --paragraph-color: #333333;
+    --heading-font: "roboto", sans-serif;
+    --body-font: "montserrat", sans-serif;
+}
+*{
+ box-sizing: border-box;
+ padding: 0;
+}
+h1,h2{
+    font-family: (--heading-font);
+    color: (--heading-color) ;
+    background: (--background-color) ;
+}
+body{
+    font-family: (--body-font);
+    color: (--paragraph-color);
+    background: (--background-color);
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+#wireframe{
+    width: 600px;
+    height: auto;
+}
