@@ -1,0 +1,55 @@
+@media (min-width: 641px) and (max-width: 1024px) {
+    #discover-container {
+        padding: 20px 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #discover-container section {
+        display: grid;
+        grid-template-areas:
+            "name name"
+            "photo  description"
+            "photo  description"
+            "photo address"
+            "site  site";
+        gap: 0.5rem;
+    }
+
+    #discover-container section h2 {
+        grid-area: name;
+    }
+
+    #discover-container section img {
+        grid-area: photo;
+        width: 300px;
+        display: block;
+        margin: 10px;
+    }
+
+    #discover-container section p:nth-of-type(1) {
+        grid-area: address;
+    }
+
+    #discover-container section p:nth-of-type(2) {
+        grid-area: description;
+    }
+
+    #discover-container section button {
+        grid-area: site;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #e7e2c1;
+        border: 2px ;
+        border-radius: 5px;
+
+    }
+    #discover-container section button:hover{
+        background-color: rgb(185, 183, 169);
+    }
+
+    #discover-container section img:hover {
+        box-shadow: 0 0 20px #eca5a5;
+    }
+}

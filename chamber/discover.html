@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Chamber of Commerce</title>
+    <title>Discover Page Chamber of Commerce</title>
     <meta name="author" content="James Omondi">
     <meta name="description" content="This is a local organization 
     of businesses that work together to strengthen the business interests of the group.">
@@ -21,12 +21,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/homemembers.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script type="module" src="scripts/modules.mjs"></script>
 
 </head>
 
@@ -48,33 +48,11 @@
             </ul>
         </nav>
     </div>
-    <main class="home">
-        <h1>Home</h1>
-        <img src="images/hero.jpg" alt="hero image" height="450">
-        <div class="home-sect">
-            <section class="events">
-                <h2>Events</h2>
-        
-                <p>Nairobi trade fair - 24th April</p>
-                <P>Mashujaa national day</P>
-                <P>Heros day</P>
-        
-            </section>
-            <section class="currentweather">
-                <h2>Current weather</h2>
-                <p>Temperature: <span id="current-temp"></span></p>
-                <figure>
-                    <img id="weather-icon" src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
-            </section>
-            <section class="weatherforecast">
-                <h2>Weather Forecast</h2>
-                <div id="forecast"></div>
-            </section>
-            <div id="members" class="spotlight"></div>
-        </div>
-
+    <main>
+        <h1>Discover</h1>
+        <div id="discover-container"></div>
+        <div id="visit-message"></div>
+        <input type="hidden" id="timestamp" name="timestamp">
     </main>
     <footer>
         <section>

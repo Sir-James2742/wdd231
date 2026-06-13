@@ -316,5 +316,41 @@ input[type=submit] {
         opacity: 1;
     }
 }
+#discover-container section {
+    border: 1px solid rgb(72, 72, 151);
+    text-align: center;
+    padding: 0 10px 15px 10px;
+    border-radius: 5px;
+    background: #c7c3c3;
+
+}
+
+#discover-container {
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#discover-container img {
+    width: 100%;
+}
+
+#visit-message {
+    text-align: center;
+
+}
+#discover-container section button {
+    margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #e7e2c1;
+    border: 2px;
+    border-radius: 5px;
+}
+
+#discover-container section button:hover {
+    background-color: rgb(185, 183, 169);
+}
 
 

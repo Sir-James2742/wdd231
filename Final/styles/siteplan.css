@@ -11,14 +11,14 @@
  padding: 0;
 }
 h1,h2{
-    font-family: (--heading-font);
-    color: (--heading-color) ;
-    background: (--background-color) ;
+    font-family: var(--heading-font);
+    color: var(--heading-color) ;
+    background: var(--background-color) ;
 }
 body{
-    font-family: (--body-font);
-    color: (--paragraph-color);
-    background: (--background-color);
+    font-family: var(--body-font);
+    color: var(--paragraph-color);
+    background: var(--background-color);
 }
 .logo img{
     width: 50px;
