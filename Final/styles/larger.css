@@ -1,0 +1,24 @@
+@media only screen and (min-width: 630px) {
+    .hamburger {
+        display: none;
+    }
+
+    .head {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        
+    }
+
+    .navigation{
+        display: block;
+    }
+    .navigation ul{
+        display: flex;
+        justify-content: space-evenly; 
+    }
+    .navigation a{
+        border-bottom: 0px;
+    }
+    
+}
