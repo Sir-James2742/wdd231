@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
@@ -20,6 +20,8 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script type="module" src="scripts/classes.mjs"></script>
+    <script type="module" src="scripts/articles.mjs"></script>
 </head>
 
 <body>
@@ -42,33 +44,54 @@
     </div>
         <main class="home">
             <h1>Home</h1>
-            <img src="images/hero.webp" alt="img" class="hero">
-            <article>
-                <h2>Introduction</h2>
-                <p>For a long time, the standard advice has been to just grind out more hours. But true learning isn’t about
-                self-punishment; it’s about strategy and environment.
+            <div class="hero-container">
+                <img src="images/hero.webp" alt="img" loading="lazy" class="hero">
+                <article class="hero-text">
+                    <h2>Introduction</h2>
+                    <p>For a long time, the standard advice has been to just grind out more hours. But true learning isn’t about
+                        self-punishment; it’s about strategy and environment.
                 
-                When you study completely on your own, it’s tough to stay accountable. Without the right structure, a five-minute break
-                easily transforms into a two-hour social media spiral. And without a supportive community, hitting a difficult concept
-                can feel like running into a brick wall.
+                        When you study completely on your own, it’s tough to stay accountable. Without the right structure, a
+                        five-minute break
+                        easily transforms into a two-hour social media spiral. And without a supportive community, hitting a difficult
+                        concept
+                        can feel like running into a brick wall.
                 
-                We believe that you shouldn't have to figure out how to learn all by yourself. </p>
-            </article>
-            <div class="classes" id="classes">
-                <h2>Today's Classes</h2>
+                        We believe that you shouldn't have to figure out how to learn all by yourself. </p>
+                </article>
             </div>
-            <div class="assignment" id="assignments">
-                <h2>Assignment</h2>
+           <div class="items">
+            <section>
+                <div class="classes" id="classes">
+                    <h2>Today's Classes</h2>
+            
+                    <dialog id="timetable-dialog">
+                        <button id="close-dialog">✖</button>
+                        <div id="timetable-content"></div>
+                    </dialog>
+            
+                </div>
+                <button id="view-timetable">View Full Timetable</button>
+            </section>
+            <div class="assignment">
+                <h2>Assignment Due</h2>
+                <p><strong>Digital electronics:</strong> Questions</p>
+                <p><strong>Network Analysis:</strong> Group work</p>
+                <p><strong>Power Systems:</strong>Lab Report</p>
+                <p><strong>Mathematics:</strong>Take Away CAT</p>
+            
             </div>
-            <div>
-                <h2>Weather Forecast</h2>
+            <div class="weather">
+                <h2>Today's Weather Forecast</h2>
                 <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
                 <figure>
                     <img id="weather-icon" src="" alt="">
                     <figcaption></figcaption>
                 </figure>
             </div>
-            <div>
+           
+           </div>
+            <div class="events">
                 <h2>Events and Articles</h2>
             </div>
         </main>

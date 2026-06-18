@@ -3,22 +3,39 @@
         display: none;
     }
 
-    .head {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        
+   .head {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 0.5rem 2rem;
+   }
+   .heading {
+       display: flex;
+       align-items: center;
+       gap: 10px;
+   }
+
+   .navigation ul {
+       display: flex;
+       gap: 2rem;
+       list-style: none;
+       margin: 0;
+       padding: 0;
+   }
+
+   .navigation a {
+       text-decoration: none;
+       border-bottom: none;
+   }
+    
+    .hero-text {
+        position: static;
+        margin-top: 1rem;
+        background: rgba(255, 255, 255, 0.9);
     }
 
-    .navigation{
-        display: block;
-    }
-    .navigation ul{
-        display: flex;
-        justify-content: space-evenly; 
-    }
-    .navigation a{
-        border-bottom: 0px;
+    .hero-container {
+        padding: 0 1rem;
     }
     
 }

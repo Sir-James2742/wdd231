@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page Study Companion</title>
+    <meta name="author" content="James Omondi">
+    <link rel="icon" href="images/favicon.png">
+    <meta name="description" content="This is a site that provides students and lectures to interact outside the class">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/resources.mjs"></script>
+</head>
+
+<body>
+    <div class="head">
+        <header>
+            <div class="heading">
+                <img src="images/logo.png" alt="icon-logo" height="24" width="24">
+                <span>Study Companion</span>
+                <button id="ham" class="hamburger"></button>
+            </div>
+        </header>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resourses.html">Resources</a></li>
+                <li><a href="tutor.html">Tutor</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Course Resources</h1>
+        <div class="resources" id="resources">
+
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="current-year"></span> Study Companion</p>
+        <div class="socials">
+            <img src="images/facebook.png" alt="facebook" width="24">
+            <img src="images/github.png" alt="linkedin" width="24">
+            <img src="images/linkedin.png" alt="linkedin" width="24">
+        </div>
+        <span id="lastModified"></span>
+    </footer>
+</body>
+
+</html>
