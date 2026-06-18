@@ -6,17 +6,6 @@
     box-sizing: border-box;
 }
 
-
-header {
-    display: grid;
-    grid-template-columns: 24px auto 24px 44px;
-    gap: 8px;
-    align-items: center;
-    margin: 0 auto;
-    padding: 10px;
-
-}
-
 body {
     margin: 0;
     padding: 20px;
@@ -27,29 +16,32 @@ header span {
     font-family: var(--heading-font);
    
 }
-.head{
+.headstart{
     background-color: #c5def3;
 }
-header img {
-    display: block;
-    width: 100%;
-    height: auto;
+
+.heading-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hamburger {
     background: none;
     border: none;
     cursor: pointer;
-    font-family: verdana,Tahoma sans-serif;
+    font-family: verdana,Tahoma, sans-serif;
     font-size: 1.5rem;
 }
 
 .hamburger::before {
     content: "\2630";
+    color: #030303;
 }
 
 .hamburger.show::before {
     content: "\00D7";
+    color: #030303;
 }
 
 .navigation {
@@ -254,8 +246,7 @@ th {
 /*Tutor page*/
 
 form {
-  max-width: 600px;
-  margin: 40px auto;
+  max-width: 600px;  
   padding: 25px;
   background: #ffffff;
   border-radius: 12px;
@@ -328,11 +319,11 @@ textarea {
 }
 
 
-button {
+.formBtn {
   width: 100%;
   padding: 14px;
-  background: #2563eb;
-  color: white;
+  background: #1f2937;
+  color: #FFFFFF;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
@@ -341,10 +332,9 @@ button {
   transition: background 0.3s ease;
 }
 
-button:hover {
+.formBtn:hover {
   background: #1d4ed8;
 }
-
-button:active {
+.formBtn:active {
   transform: scale(0.98);
 }

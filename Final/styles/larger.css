@@ -3,17 +3,9 @@
         display: none;
     }
 
-   .head {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       padding: 0.5rem 2rem;
-   }
-   .heading {
-       display: flex;
-       align-items: center;
-       gap: 10px;
-   }
+    .navigation {
+    display: block;
+}
 
    .navigation ul {
        display: flex;
@@ -21,6 +13,12 @@
        list-style: none;
        margin: 0;
        padding: 0;
+   }
+   .headstart{
+        display: flex;
+        gap: 100px;
+        padding:0  5px 10px;
+        justify-content: space-between;
    }
 
    .navigation a {
